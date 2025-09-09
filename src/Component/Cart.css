@@ -1,0 +1,181 @@
+/* ===== Body & Global Styles ===== */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: #e9ecef;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ===== Container ===== */
+.cart-container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 60px auto;
+	padding: 20px;
+}
+
+/* ===== Cart Title ===== */
+.cart-title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	color: #007bff;
+	margin-bottom: 40px;
+}
+
+/* ===== Cart Content Layout ===== */
+.cart-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 16px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.cart-content:hover {
+	transform: translateY(-3px);
+}
+
+/* ===== Bike Image ===== */
+.cart-image {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.cart-image img {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	border-radius: 16px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Bike Details ===== */
+.cart-details {
+	flex: 1;
+	padding: 10px 20px;
+}
+
+.cart-details p {
+	font-size: 20px;
+	margin: 15px 0;
+}
+
+.cart-details span {
+	font-weight: bold;
+	color: #000;
+}
+
+/* Optional: Highlight the plan */
+.cart-details .plan {
+	background: #f0f8ff;
+	padding: 6px 12px;
+	border-radius: 8px;
+	color: #007bff;
+	font-weight: 600;
+	margin-left: 5px;
+}
+
+/* ===== Buttons Section ===== */
+.cart-buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.cart-buttons button {
+	width: 220px;
+	padding: 14px 0;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.proceed-btn {
+	background: #28a745; /* Green */
+	color: #fff;
+}
+
+.proceed-btn:hover {
+	background: #218838;
+	transform: scale(1.05);
+}
+
+.back-btn {
+	background: #007bff; /* Blue */
+	color: #fff;
+}
+
+.back-btn:hover {
+	background: #0056b3;
+	transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+	margin-top: 60px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+}
+
+/* cart details */
+.cart-input {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px 12px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 16px;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+
+/* Focus effect */
+.cart-input:focus {
+	border-color: #007bff;
+	outline: none;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea specific adjustments */
+.cart-textarea {
+	min-height: 80px;
+	resize: vertical;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+	.cart-content {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.cart-image img {
+		max-width: 80%;
+	}
+
+	.cart-buttons {
+		flex-direction: column;
+	}
+
+	.cart-buttons button {
+		width: 80%;
+	}
+}
